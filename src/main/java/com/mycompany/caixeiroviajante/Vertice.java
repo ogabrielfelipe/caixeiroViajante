@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.caixeiroviajante;
-import com.mycompany.caixeiroviajante.Adjacente;
 import java.util.ArrayList; 
 /**
  *
@@ -15,6 +14,9 @@ public class Vertice{
     private Boolean visitado;
     private ArrayList<Adjacente> adjacentes;
 
+    public Vertice(){
+
+    }
     public Vertice(String nome_cidade, Integer dist_obj) {
         this.nome_cidade = nome_cidade;
         this.dist_obj = dist_obj;

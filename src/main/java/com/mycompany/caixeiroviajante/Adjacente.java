@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.caixeiroviajante;
-import com.mycompany.caixeiroviajante.Vertice;
 /**
  *
  * @author ogabrielfelipe
@@ -40,10 +39,10 @@ public class Adjacente implements Comparable<Adjacente>{
    //método para comparação das distancias dos vertices
     @Override
     public int compareTo(Adjacente ad){
-        if (this.vertice.getDist_obj() > ad.vertice.getDist_obj()){
+        if ((this.vertice.getDist_obj() + this.getDistancia()) > (ad.vertice.getDist_obj() + ad.getDistancia())){
             return 1;
         }
-        else if (this.vertice.getDist_obj() < ad.vertice.getDist_obj()){
+        else if ((this.vertice.getDist_obj() + this.getDistancia()) < (ad.vertice.getDist_obj() + ad.getDistancia())){
            return -1;
         }
        return this.vertice.getNome_cidade().compareToIgnoreCase(ad.vertice.getNome_cidade());

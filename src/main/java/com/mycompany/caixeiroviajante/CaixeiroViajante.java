@@ -4,8 +4,6 @@
  */
 
 package com.mycompany.caixeiroviajante;
-import com.mycompany.caixeiroviajante.Grafo;
-import com.mycompany.caixeiroviajante.Gulosa;
 
 /**
  *
@@ -16,9 +14,8 @@ public class CaixeiroViajante {
     public static void main(String[] args) {
         Grafo mapa = new Grafo();
         
-        Gulosa gulosa = new Gulosa(mapa.bucharest);
-        gulosa.busca(mapa.oredea);     
-        
+        AEstrela aEstrela = new AEstrela(mapa.bucharest);
+        aEstrela.busca(mapa.oredea);           
 
     }
 }
